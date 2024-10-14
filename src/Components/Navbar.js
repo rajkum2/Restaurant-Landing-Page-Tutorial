@@ -25,6 +25,14 @@ const Navbar = () => {
       icon: <HomeIcon />,
     },
     {
+      text: "Menu",
+      icon: <HomeIcon />,
+    },
+    {
+      text: "Catering",
+      icon: <HomeIcon />,
+    },
+    {
       text: "About",
       icon: <InfoIcon />,
     },
