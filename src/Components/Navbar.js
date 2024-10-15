@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
 import Logo from "../Assets/Logo.svg";
+import { Link } from 'react-router-dom';
 import { BsCart2 } from "react-icons/bs";
 import { FaPhoneAlt } from 'react-icons/fa';
 import { HiOutlineBars3 } from "react-icons/hi2";
