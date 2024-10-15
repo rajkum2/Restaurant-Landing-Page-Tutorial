@@ -3,12 +3,17 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
       content="Web site created using create-react-app"
     />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,10 +22,34 @@
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <title>Restaurant Landing Page</title>
+    <title>Biryani Adda & Cafe</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script>
+      (function(e, t, r, n) {
+         var o, c, s;
+         o = e.document, c = t.children[0], s = o.createElement("script"), e.StorefrontSDKObject = "StorefrontSDK", e[e.StorefrontSDKObject] = {
+             executeCommand: function(t, r) {
+                 e[e.StorefrontSDKObject].buffer.push([t, r])
+             },
+             buffer: []
+         }, s.async = 1, s.src ='https://web-apps.cdn4dd.com/webapps/sdk-storefront/latest/sdk.js' , t.insertBefore(s, c)
+     })(window, document.head);
+     StorefrontSDK.executeCommand('renderFloatingButton', {
+         businessId: 13384076,
+         businessSlug: 'MerchantName',
+         floatingBar: true,
+         position: 'bottom',
+         buttonAlignment: 'center',
+         backgroundColor: 'transparent',
+         buttonBackgroundColor: '#D92128',
+         borderColor: 'transparent',
+         buttonText: 'Order Pickup & Delivery',
+         showModal: true
+       } 
+     )
+     </script>
   </body>
 </html>
