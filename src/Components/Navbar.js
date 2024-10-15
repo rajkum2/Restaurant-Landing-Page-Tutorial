@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Logo from "../Assets/Logo.svg";
 import { Link } from 'react-router-dom';
-import { BsCart2 } from "react-icons/bs";
+// import { BsCart2 } from "react-icons/bs";
 import { FaPhoneAlt } from 'react-icons/fa';
 import { HiOutlineBars3 } from "react-icons/hi2";
 import Box from "@mui/material/Box";
