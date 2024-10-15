@@ -13,15 +13,9 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import HomeIcon from "@mui/icons-material/Home";
-import InfoIcon from "@mui/icons-material/Info";
-import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
-import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
-import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
-import {
-  Link,
-  Route,
-  Routes
-} from 'react-router-dom';
+// Removed unused imports
+// import { Route, Routes } from 'react-router-dom';
+
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const menuOptions = [
@@ -37,6 +31,7 @@ const Navbar = () => {
       text: "Catering",
       icon: <HomeIcon />,
     },
+    // Uncomment if you plan to use these options
     // {
     //   text: "About",
     //   icon: <InfoIcon />,
