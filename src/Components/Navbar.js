@@ -88,7 +88,7 @@ const Navbar = () => {
         direction="row"
         justifyContent="space-between"
         alignItems="center">
-        <Grid item>4378 Thornton Ave, Fremont, CA-94538</Grid>
+        <Grid item>4378 Thornton Ave, Fremont, CA-94536</Grid>
         <Grid item>
           <button className="primary-button">
             <a href="tel:5108941238" style={{fontSize: "30px"}}><FaPhoneAlt size={25} color="red" className="navbar-cart-icon" /> 510 894-1238</a>
